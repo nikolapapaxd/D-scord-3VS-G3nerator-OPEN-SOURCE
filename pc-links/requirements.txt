@@ -1,0 +1,4 @@
+requests>=2.31.0
+# Optional for PC generation mode:
+# selenium>=4.15.0
+# webdriver-manager>=4.0.1
