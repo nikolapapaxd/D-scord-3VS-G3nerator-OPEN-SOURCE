@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Discord EVS Generator</string>
+    <string name="app_version_label">v6.5.0</string>
+    <string name="app_subtitle">Discord EVS Generator · v6.5.0</string>
+    <string name="tab_generator">Generate</string>
+    <string name="tab_results">Accounts</string>
+    <string name="tab_joiner">Joiner</string>
+    <string name="tab_tools">Tools</string>
+    <string name="tab_settings">Settings</string>
+    <string name="tab_info">Info</string>
+
+    <!-- Settings labels -->
+    <string name="setting_random_email_prefix">Custom Email Prefix</string>
+    <string name="setting_random_email_prefix_sub">Use your own email local-part prefix</string>
+    <string name="setting_custom_password">Custom Password</string>
+    <string name="setting_custom_password_sub">Use a fixed password for all accounts</string>
+    <string name="setting_verify_email">Verify Email</string>
+    <string name="setting_verify_email_sub">Auto-verify accounts via temp mail inbox</string>
+    <string name="setting_verify_phone">Verify Phone</string>
+    <string name="setting_verify_phone_sub">Auto-verify phone via SMS service</string>
+    <string name="setting_auto_captcha">AutoCaptcha (NopeCHA)</string>
+    <string name="setting_auto_captcha_sub">Automatically solve captchas using NopeCHA API</string>
+    <string name="setting_advanced_in_app_solver">Advanced In-App Solver</string>
+    <string name="setting_advanced_in_app_solver_sub">Built-in image-recognition captcha solver</string>
+    <string name="setting_proxy">Enable Proxy</string>
+    <string name="setting_proxy_sub">Route all requests through a proxy server</string>
+    <string name="setting_random_username">Random Username</string>
+    <string name="setting_random_username_sub">Generate random usernames automatically</string>
+    <string name="setting_random_display_name">Random Display Name</string>
+    <string name="setting_random_display_name_sub">Use random display names for each account</string>
+    <string name="setting_save_only_valid">Save Only VALID Tokens</string>
+    <string name="setting_save_only_valid_sub">Skip accounts with LOCKED or INVALID tokens</string>
+    <string name="setting_show_webview">Show WebView</string>
+    <string name="setting_show_webview_sub">Display the browser automation panel</string>
+    <string name="setting_human_delay">Human-like Delays</string>
+    <string name="setting_human_delay_sub">Add random delays to avoid detection</string>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark palette — pure black page bg; gray only on floating cards/surfaces -->
+    <color name="background">#0d0e12</color>
+    <color name="foreground">#f2f3f5</color>
+    <color name="card">#171923</color>
+    <color name="card_alt">#1d1f2b</color>
+    <color name="surface">#252938</color>
+    <color name="surface_strong">#2c3042</color>
+    <color name="border">#35394c</color>
+    <color name="muted_foreground">#b5bac1</color>
+    <color name="primary">#5865F2</color>
+    <color name="primary_20">#335865F2</color>
+    <color name="primary_soft">#2a5865F2</color>
+    <color name="destructive">#ed4245</color>
+    <color name="success">#57f287</color>
+    <color name="warning">#fee75c</color>
+    <color name="hack_green">#00ff41</color>
+    <color name="nav_active">#5865F2</color>
+    <color name="nav_inactive">#b5bac1</color>
+    <color name="overlay_scrim">#E6090A10</color>
+</resources>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/generatorFragment">
+
+    <fragment
+        android:id="@+id/generatorFragment"
+        android:name="com.discord.evs.generator.ui.GeneratorFragment"
+        android:label="Generate" />
+
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.discord.evs.generator.ui.ResultsFragment"
+        android:label="Accounts" />
+
+    <fragment
+        android:id="@+id/joinerFragment"
+        android:name="com.discord.evs.generator.ui.JoinerFragment"
+        android:label="Joiner" />
+
+    <fragment
+        android:id="@+id/toolsFragment"
+        android:name="com.discord.evs.generator.ui.ToolsFragment"
+        android:label="Tools" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.discord.evs.generator.ui.SettingsFragment"
+        android:label="Settings" />
+
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.discord.evs.generator.ui.InfoFragment"
+        android:label="Info" />
+
+    <fragment
+        android:id="@+id/changelogFragment"
+        android:name="com.discord.evs.generator.ui.ChangelogFragment"
+        android:label="Changelog" />
+
+</navigation>

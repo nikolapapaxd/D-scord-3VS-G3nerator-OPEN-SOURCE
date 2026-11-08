@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingStart="14dp"
+    android:paddingEnd="14dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/log_icon"
+        android:layout_width="22dp"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:text="•" />
+
+    <TextView
+        android:id="@+id/log_account"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/muted_foreground"
+        android:textSize="11sp"
+        android:fontFamily="monospace"
+        android:ellipsize="end"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/log_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/muted_foreground"
+        android:textSize="10sp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:maxWidth="90dp" />
+
+    <TextView
+        android:id="@+id/log_result"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:gravity="end" />
+
+</LinearLayout>

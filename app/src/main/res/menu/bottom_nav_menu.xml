@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- BottomNavigationView max 5 items. Joiner moved to Tools subtab. -->
+    <item
+        android:id="@+id/generatorFragment"
+        android:icon="@drawable/ic_terminal"
+        android:title="@string/tab_generator" />
+    <item
+        android:id="@+id/resultsFragment"
+        android:icon="@drawable/ic_list"
+        android:title="@string/tab_results" />
+    <item
+        android:id="@+id/toolsFragment"
+        android:icon="@drawable/ic_tools"
+        android:title="@string/tab_tools" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/tab_settings" />
+    <item
+        android:id="@+id/infoFragment"
+        android:icon="@drawable/ic_info"
+        android:title="@string/tab_info" />
+</menu>

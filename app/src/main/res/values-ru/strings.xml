@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Discord EVS Generator</string>
+    <string name="tab_generator">Генерация</string>
+    <string name="tab_results">Аккаунты</string>
+    <string name="tab_joiner">Джойнер</string>
+    <string name="tab_tools">Инструменты</string>
+    <string name="tab_settings">Настройки</string>
+    <string name="tab_info">Инфо</string>
+
+    <string name="setting_custom_password">Пользовательский пароль</string>
+    <string name="setting_custom_password_sub">Использовать фиксированный пароль для всех аккаунтов</string>
+    <string name="setting_verify_email">Подтвердить Email</string>
+    <string name="setting_verify_email_sub">Автоподтверждение аккаунтов через временную почту</string>
+    <string name="setting_verify_phone">Подтвердить телефон</string>
+    <string name="setting_verify_phone_sub">Автоподтверждение телефона через SMS-сервис</string>
+    <string name="setting_auto_captcha">AutoCaptcha (NopeCHA)</string>
+    <string name="setting_auto_captcha_sub">Автоматически решать капчи через API NopeCHA</string>
+    <string name="setting_advanced_in_app_solver">Расширенный встроенный решатель</string>
+    <string name="setting_advanced_in_app_solver_sub">Встроенный решатель капч с распознаванием изображений</string>
+    <string name="setting_proxy">Включить прокси</string>
+    <string name="setting_proxy_sub">Маршрутизировать все запросы через прокси-сервер</string>
+    <string name="setting_random_username">Случайный никнейм</string>
+    <string name="setting_random_username_sub">Генерировать случайные никнеймы</string>
+    <string name="setting_random_email_prefix">Случайный префикс Email</string>
+    <string name="setting_random_email_prefix_sub">Использовать случайную локальную часть для временной почты</string>
+    <string name="setting_random_display_name">Случайное отображаемое имя</string>
+    <string name="setting_random_display_name_sub">Использовать случайные отображаемые имена</string>
+    <string name="setting_save_only_valid">Сохранять только ВАЛИДНЫЕ токены</string>
+    <string name="setting_save_only_valid_sub">Пропускать аккаунты с ЗАБЛОКИРОВАННЫМИ или НЕВАЛИДНЫМИ токенами</string>
+    <string name="setting_show_webview">Показывать WebView</string>
+    <string name="setting_show_webview_sub">Показывать панель автоматизации браузера</string>
+    <string name="setting_human_delay">Человекоподобные задержки</string>
+    <string name="setting_human_delay_sub">Добавлять случайные задержки, чтобы избежать обнаружения</string>
+    <string name="app_version_label">v3.5.0</string>
+    <string name="app_subtitle">Discord EVS Generator · v3.5.0</string>
+</resources>

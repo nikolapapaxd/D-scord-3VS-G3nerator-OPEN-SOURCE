@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Discord EVS Generator</string>
+    <string name="tab_generator">Generieren</string>
+    <string name="tab_results">Konten</string>
+    <string name="tab_joiner">Joiner</string>
+    <string name="tab_tools">Tools</string>
+    <string name="tab_settings">Einstellungen</string>
+    <string name="tab_info">Info</string>
+
+    <string name="setting_custom_password">Benutzerdefiniertes Passwort</string>
+    <string name="setting_custom_password_sub">Ein festes Passwort für alle Konten verwenden</string>
+    <string name="setting_verify_email">E-Mail bestätigen</string>
+    <string name="setting_verify_email_sub">Konten automatisch über temporäre E-Mail bestätigen</string>
+    <string name="setting_verify_phone">Telefon bestätigen</string>
+    <string name="setting_verify_phone_sub">Telefon automatisch per SMS-Service bestätigen</string>
+    <string name="setting_auto_captcha">AutoCaptcha (NopeCHA)</string>
+    <string name="setting_auto_captcha_sub">Captchas automatisch über die NopeCHA-API lösen</string>
+    <string name="setting_advanced_in_app_solver">Erweiterter In-App-Solver</string>
+    <string name="setting_advanced_in_app_solver_sub">Integrierter Bilderkennungs-Captcha-Solver</string>
+    <string name="setting_proxy">Proxy aktivieren</string>
+    <string name="setting_proxy_sub">Alle Anfragen über einen Proxy-Server leiten</string>
+    <string name="setting_random_username">Zufälliger Benutzername</string>
+    <string name="setting_random_username_sub">Zufällige Benutzernamen generieren</string>
+    <string name="setting_random_email_prefix">Zufälliger E-Mail-Präfix</string>
+    <string name="setting_random_email_prefix_sub">Zufälligen lokalen Teil für temporäre E-Mail verwenden</string>
+    <string name="setting_random_display_name">Zufälliger Anzeigename</string>
+    <string name="setting_random_display_name_sub">Zufällige Anzeigenamen für jedes Konto verwenden</string>
+    <string name="setting_save_only_valid">Nur GÜLTIGE Tokens speichern</string>
+    <string name="setting_save_only_valid_sub">Konten mit GESPERRTEN oder UNGÜLTIGEN Tokens überspringen</string>
+    <string name="setting_show_webview">WebView anzeigen</string>
+    <string name="setting_show_webview_sub">Browser-Automatisierungspanel anzeigen</string>
+    <string name="setting_human_delay">Menschliche Verzögerungen</string>
+    <string name="setting_human_delay_sub">Zufällige Verzögerungen zur Erkennungsvermeidung hinzufügen</string>
+    <string name="app_version_label">v3.5.0</string>
+    <string name="app_subtitle">Discord EVS Generator · v3.5.0</string>
+</resources>
