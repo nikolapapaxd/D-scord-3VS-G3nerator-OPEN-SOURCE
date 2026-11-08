@@ -1,0 +1,13 @@
+{
+  "name": "evs-backend-api",
+  "version": "3.5.0",
+  "private": true,
+  "description": "Hardened secrets / install / account / forward API for Discord EVS Generator v3.5.0",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "node -e \"console.log('Use: set -a && source .env && set +a && npx vercel dev')\"",
+    "print-key-len": "node -e \"require('fs').readFileSync('.env','utf8').split(/\\n/).forEach(l=>{if(l.startsWith('EVS_API_KEY='))console.log('EVS_API_KEY length',l.slice(12).length)})\""
+  }
+}

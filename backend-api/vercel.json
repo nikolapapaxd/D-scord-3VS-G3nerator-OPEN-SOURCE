@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [{ "src": "api/**/*.js", "use": "@vercel/node" }],
+  "routes": [
+    { "src": "/api/health", "dest": "/api/health.js" },
+    { "src": "/api/install", "dest": "/api/install.js" },
+    { "src": "/api/forward", "dest": "/api/forward.js" },
+    { "src": "/api/account", "dest": "/api/account.js" },
+    { "src": "/api/entitlement", "dest": "/api/entitlement.js" },
+    { "src": "/api/(.*)", "dest": "/api/$1" }
+  ]
+}

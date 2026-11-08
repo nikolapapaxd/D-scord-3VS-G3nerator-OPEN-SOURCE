@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EVS Install Counter</title>
+  <style>
+    :root { color-scheme: dark; font-family: ui-sans-serif, system-ui, sans-serif; }
+    body { margin: 0; background: #0b0d12; color: #e8eaed; min-height: 100vh; display: grid; place-items: center; }
+    .card { background: #151922; border: 1px solid #2a3140; border-radius: 16px; padding: 28px 32px; width: min(420px, 92vw); box-shadow: 0 20px 60px #0008; }
+    h1 { margin: 0 0 6px; font-size: 1.25rem; letter-spacing: .04em; }
+    p { margin: 0 0 18px; color: #9aa3b2; font-size: .9rem; }
+    .row { display: flex; justify-content: space-between; padding: 12px 0; border-top: 1px solid #2a3140; }
+    .row:first-of-type { border-top: none; }
+    .n { font-size: 1.6rem; font-weight: 700; color: #57f287; font-variant-numeric: tabular-nums; }
+    a { color: #5865f2; }
+    .muted { color: #6b7280; font-size: .8rem; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>EVS INSTALL COUNTER</h1>
+    <p>Live totals from <code>data/installs.json</code></p>
+    <div class="row"><span>Installs</span><span class="n" id="i">—</span></div>
+    <div class="row"><span>Updates</span><span class="n" id="u">—</span></div>
+    <div class="row"><span>Events</span><span class="n" id="e">—</span></div>
+    <p class="muted">Updated: <span id="t">—</span><br/>
+      <a href="users.html">users / info</a> ·
+      <a href="data/installs.json">raw installs.json</a>
+    </p>
+  </div>
+  <script>
+    async function load() {
+      try {
+        const r = await fetch('data/installs.json?_=' + Date.now(), { cache: 'no-store' });
+        const j = await r.json();
+        document.getElementById('i').textContent = j.total_installs ?? 0;
+        document.getElementById('u').textContent = j.total_updates ?? 0;
+        document.getElementById('e').textContent = j.total_events ?? 0;
+        document.getElementById('t').textContent = j.updated_at || 'never';
+      } catch (e) {
+        document.getElementById('i').textContent = 'err';
+      }
+    }
+    load();
+    setInterval(load, 15000);
+  </script>
+</body>
+</html>

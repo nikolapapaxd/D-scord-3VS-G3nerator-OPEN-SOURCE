@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EVS Install Events</title>
+  <style>
+    :root { color-scheme: dark; font-family: ui-sans-serif, system-ui, sans-serif; }
+    body { margin: 0; background: #0b0d12; color: #e8eaed; padding: 24px; }
+    h1 { font-size: 1.2rem; }
+    table { width: 100%; border-collapse: collapse; font-size: .85rem; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #2a3140; }
+    th { color: #9aa3b2; font-weight: 600; }
+    .tag { padding: 2px 8px; border-radius: 999px; font-size: .75rem; }
+    .install { background: #1a3a2a; color: #57f287; }
+    .update { background: #2a2a1a; color: #fee75c; }
+    a { color: #5865f2; }
+  </style>
+</head>
+<body>
+  <h1>users / info</h1>
+  <p><a href="index.html">← counter</a> · source <code>data/users_or_info.json</code></p>
+  <table>
+    <thead><tr><th>When</th><th>Type</th><th>Device</th><th>Version</th></tr></thead>
+    <tbody id="tb"><tr><td colspan="4">loading…</td></tr></tbody>
+  </table>
+  <script>
+    async function load() {
+      const r = await fetch('data/users_or_info.json?_=' + Date.now(), { cache: 'no-store' });
+      const j = await r.json();
+      const ev = (j.events || []).slice().reverse().slice(0, 200);
+      const tb = document.getElementById('tb');
+      if (!ev.length) { tb.innerHTML = '<tr><td colspan="4">no events yet</td></tr>'; return; }
+      tb.innerHTML = ev.map(e => `<tr>
+        <td>${e.ts || ''}</td>
+        <td><span class="tag ${e.type}">${e.type}</span></td>
+        <td><code>${(e.device || '').slice(0, 12)}</code></td>
+        <td>${e.version || ''}</td>
+      </tr>`).join('');
+    }
+    load();
+    setInterval(load, 20000);
+  </script>
+</body>
+</html>
